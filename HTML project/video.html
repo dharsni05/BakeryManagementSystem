@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<link rel="stylesheet" type="text/css" href="cakecss.css">
+</head>
+<body>  <div class="pic">
+<img src=" logo.jpg" alt="logo" height="100" width="100" class="center"/>
+</div>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br>
+<video id="video1" width="500" height="500" controls>
+    <source src=" video.mp4" type="video/mp4">
+  
+</video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="https://www.youtube.com/watch?v=qtlhdIfojmc" target="_blank">my cake recipe</a>.</p>
+<br>
+<font face="cinzel" size="4">    
+            <a href="doc2.html">HOME</a> 
+</body> 
+</html>

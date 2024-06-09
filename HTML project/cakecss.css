@@ -1,0 +1,10 @@
+div.pic{
+position:absolute;
+top:20px;
+left:50px;
+}
+.searchbar{
+width:100px;
+display:flex;
+}
+
